@@ -1,0 +1,13 @@
+cat << 'EOF' > .gitignore
+# Environnement virtuel (ne jamais pousser sur Git)
+.venv/
+venv/
+env/
+
+# Caches Python
+__pycache__/
+*.py[cod]
+
+# Secrets locaux
+.env
+EOF
