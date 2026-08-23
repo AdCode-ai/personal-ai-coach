@@ -1,13 +1,25 @@
 cat << 'EOF' > .gitignore
-# Environnement virtuel (ne jamais pousser sur Git)
+# Environnements virtuels
 .venv/
 venv/
 env/
 
-# Caches Python
+# Python
 __pycache__/
 *.py[cod]
+.pytest_cache/
+.ruff_cache/
 
-# Secrets locaux
+# Node / Frontend (pour plus tard)
+node_modules/
+.next/
+dist/
+
+# Environnement & secrets
 .env
+.env.local
+
+# IDE
+.vscode/
+.idea/
 EOF
